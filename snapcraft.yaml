@@ -1,0 +1,26 @@
+name: glow
+version: '1.0.2'
+summary: Render markdown on the CLI, with pizzazz! 💅
+description: |
+  Glow is a terminal based markdown reader designed from the ground up to bring out the beauty—and power—of the CLI.
+
+  Use it to discover markdown files, read documentation directly on the command line and stash markdown files to your own private collection so you can read them anywhere. Glow will find local markdown files in subdirectories or a local Git repository.
+
+  By the way, all data stashed is encrypted end-to-end: only you can decrypt it. More on that below.
+
+base: core20
+
+parts:
+  glow:
+    plugin: go
+    source: https://github.com/charmbracelet/glow
+    source-type: git
+    build-packages:
+      - gcc-multilib
+
+apps:
+  glow:
+    command: bin/glow
+    plugs:
+      - home
+
