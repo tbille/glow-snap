@@ -1,6 +1,6 @@
 name: glow
 version: '1.0.2'
-summary: Render markdown on the CLI, with pizzazz! 💅
+summary: Render markdown on the CLI, with pizzazz!
 description: |
   Glow is a terminal based markdown reader designed from the ground up to bring out the beauty—and power—of the CLI.
 
